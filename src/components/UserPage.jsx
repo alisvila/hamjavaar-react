@@ -12,6 +12,7 @@ class UserPage extends Component {
           <div className="content">
             <ul v-if="users && users.length" id="foo">
               <li v-for="user in users" key="user.id">
+              this is user component
                 {/* {{ user.username }} */}
               </li>
             </ul>

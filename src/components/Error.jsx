@@ -3,7 +3,10 @@ import React from 'react';
 const Error = () => {
     return(
         <div>
-            Error
+            <p>
+            Error 404 not found
+            </p>
+                
         </div>
     );
 

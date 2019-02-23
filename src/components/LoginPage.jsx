@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { userService } from '../_services/UserServices';
+import { Route, Redirect } from 'react-router'
 
 class LoginPage extends Component {
 
@@ -9,18 +10,22 @@ class LoginPage extends Component {
             username: "",
             password: ""
         }
+
+        this.submitCredentials = this.submitCredentials.bind(this);
     }
 
     submitCredentials(e) {
         e.preventDefault();
+        const { from } = this.props.location.state || { from: { pathname: "/" }}
+        console.log(from)
+        this.props.history.push(from)
 
-        userService.login(this.username, this.password)
-          .then(response => {
-            this.$router.push(this.$route.query.redirect || '/')
-          })
-          .catch(error => {
-            console.log('READ', error)
-          })
+        // userService.login(this.username, this.password)
+        //   .then(user => {
+        //     })
+        //   .catch(error => {
+        //     console.log('READ', error)
+        //   })
       }
 
     updateInputValue(e) {

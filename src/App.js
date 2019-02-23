@@ -8,11 +8,15 @@ import Error from './components/Error';
 import LoginPage from './components/LoginPage';
 import SignUpPage from './components/SignUpPage';
 import UserPage from './components/UserPage';
-import logo from './logo.svg';
+import { PrivateRoute } from './components/PrivateRoute';
 import './App.css';
 import 'bulma/css/bulma.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+  }
+  
   render() {
     return (
       <>
@@ -23,7 +27,7 @@ class App extends Component {
               <Route path="/" component={HomePage} exact></Route>
               <Route path="/signup" component={SignUpPage}></Route>
               <Route path="/login" component={LoginPage}></Route>
-              <Route path="/user" component={UserPage}></Route>
+              <PrivateRoute path="/user" component={UserPage} />
               <Route component={Error}></Route>
             </Switch>
           </>
