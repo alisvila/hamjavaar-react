@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { userService } from '../_services/UserServices';
 import { Route, Redirect } from 'react-router'
+// import { useTranslation } from 'react-i18next';
+
 
 class LoginPage extends Component {
 
@@ -41,8 +43,11 @@ class LoginPage extends Component {
     }
 
     render() {
+        // const { t, } = useTranslation()
         return (
-            <div className="container">
+            <section className="hero is-fullheight">
+            <div className="hero-body">
+            <div className="container has-text-centered">
             <div className="columns is-centered login-page">
             <div className="column is-4">
                 <div className="box">
@@ -91,6 +96,8 @@ class LoginPage extends Component {
             </div>
             </div>
             </div>
+            </div>
+            </section>
         );
     }
 }

@@ -8,6 +8,7 @@ class NavBar extends Component {
         super(props)
 
         this.state = {
+            user: JSON.parse(localStorage.getItem('user'))
         }
 
     }
@@ -54,7 +55,7 @@ class NavBar extends Component {
                 <div className="navbar-item">
                 <div className="buttons">
                     <a className="button" click="changeLang">lang</a>
-                    {!userService.isLogedIn() &&
+                    {userService.isLogedIn() != true &&
                     <>
                         <Link to="/signup" className="navbar-item" >signup</Link>
                         <Link to="/login" className="navbar-item" >login</Link>
