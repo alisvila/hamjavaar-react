@@ -8,7 +8,7 @@ import LoginPage from './components/LoginPage';
 import SignUpPage from './components/SignUpPage';
 import UserPage from './components/UserPage';
 import { PrivateRoute } from './components/PrivateRoute';
-// import PannelHome from './components/pannel/components/PannelHome'
+import PannelHome from './components/pannel/PannelHome'
 import './App.css';
 import 'bulma/css/bulma.css';
 // import './i18n';
@@ -28,7 +28,7 @@ class App extends Component {
               <Route path="/signup" component={SignUpPage}></Route>
               <Route path="/login" component={LoginPage}></Route>
               <PrivateRoute path="/user" component={UserPage} />
-              {/* <PrivateRoute path="/pannel" component={PannelHome} /> */}
+              <PrivateRoute path="/pannel" component={PannelHome} />
               <Route component={Error}></Route>
             </Switch>
           </>
