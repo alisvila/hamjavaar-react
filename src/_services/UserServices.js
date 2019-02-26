@@ -15,7 +15,9 @@ function isLogedIn() {
         console.log("true")
         return true
     }
-    return false
+    else {
+        return false
+    }
 }
 
 function login(username, password) {
@@ -43,7 +45,6 @@ function login(username, password) {
 function logout() {
     // remove user from local storage to log user out
     localStorage.removeItem('user');
-    console.log("loged out")
 }
 
 function getAll() {

@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import Footer from './Footer';
+import NavBar from './NavBar';
+
+
 import './HomePage.css'
 
 
@@ -6,6 +10,7 @@ class HomePage extends Component {
   render() {
     return (
       <>
+      <NavBar /> 
       <section className="hero is-link is-fullheight is-fullheight-with-navbar">
         <div className="hero-body">
           <div className="container">Hello! I am
@@ -79,6 +84,7 @@ class HomePage extends Component {
         </a>
       </div>
     </section>
+    <Footer />
     </>
     );
   }

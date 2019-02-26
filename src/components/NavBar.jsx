@@ -11,6 +11,14 @@ class NavBar extends Component {
             user: JSON.parse(localStorage.getItem('user'))
         }
 
+        this.logout = this.logout.bind(this)
+
+    }
+
+    logout(e) {
+        e.preventDefault();
+        userService.logout();
+        this.props.history.push("/")
     }
 
     render() {
@@ -43,7 +51,7 @@ class NavBar extends Component {
                         <a className="navbar-item">Jobs</a>
                         <a className="navbar-item">Contact</a>
                         <hr className="navbar-divider" />
-                        <a className="navbar-item" onClick={userService.logout()}>logout</a>
+                        <a className="navbar-item" onClick={e => this.logout(e)}>logout</a>
                     </div>
 
                     </div>
