@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import NavBar from './NavBar';
+
 
 class UserPage extends Component {
     constructor(props) {
@@ -8,6 +10,7 @@ class UserPage extends Component {
     render() {
       return(
         <div>
+        < NavBar />
         <div className="container">
           <div className="content">
             <ul v-if="users && users.length" id="foo">

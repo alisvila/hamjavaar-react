@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PannelMenu from './PannelMenu';
+import SideMenu from './SidePannel';
 
 class PannelHome extends Component {
     constructor(props) {
@@ -10,6 +11,7 @@ class PannelHome extends Component {
         return(
             <>
             <div className="container">
+                <SideMenu />
                 <section className="columns">
                 <PannelMenu />
                 <div className="column">
