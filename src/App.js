@@ -10,7 +10,9 @@ import UserPage from './components/UserPage';
 import { PrivateRoute } from './components/PrivateRoute';
 import PannelHome from './components/pannel/PannelHome'
 import './App.css';
-import 'bulma/css/bulma.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.js';
+
 // import './i18n';
 
 class App extends Component {

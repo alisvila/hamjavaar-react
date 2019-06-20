@@ -8,3 +8,83 @@
 .login-wrapper .is-6 {
     max-width: 400px;
 }
+
+.btn-finno {
+    border: 1px solid #ff9900;
+    background-color: #ff9900;
+	    color: white;
+}
+
+.btn-finno:hover {
+background-color: #f58220
+}
+
+.login-wrapper {
+    /* width: 445px; */
+    height: 600px;
+    padding: 40px;
+}
+.login-wrapper:first-child {
+    border-right: 1px solid rgb(230, 230, 230);;
+}
+
+.login-wrapper input {
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 96%;
+}
+
+	.checkbox {
+		    text-align: center;
+    color: #505050;
+	}
+	.error {
+		    text-align: center;
+    color: white;
+    background: #e23d39;
+    margin-top: 14px;
+    border-radius: 5px;
+    padding: 2px;
+	}
+	.power {
+		color: #444444;
+		    text-align: center;
+    direction: ltr;
+	    font-size: 22px;
+	}
+	.power img {
+		height: 41px;
+	}
+	.power .heart {
+		height: 26px;
+    }
+    
+    .funnel {
+        background:url(&quot;https://d1a3f4spazzrp4.cloudfront.net/arch-frontend/1.1.1/d1a3f4spazzrp4.cloudfront.net/1454024011-global_aqua_01_scale_125_144dpi_01-37a1ca0b8b.png&quot;) center center repeat;
+    }
+
+
+header.funnel {
+    height: 40px;
+    background-size: 60px 60px!important;
+    position: relative;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+
+ .login-box {
+     height: 100%;
+ }
+ .login-box-wrapper {
+    min-height: 570px;
+    margin: 15% auto;
+    border: 1px solid #e6e6e6;
+    background-color: #fbfbfb;
+    direction: rtl;
+    border-radius: 45px;
+ }
